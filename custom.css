@@ -12,13 +12,13 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #16191b;
+  line-height: 2;
+  color: #0c5383;
   background-color: #eff2f3;
 }
 
 .card-title {
-  background: rgba(117, 205, 237, 0.358);
+  background: rgba(109, 180, 206, 0.358);
 }
 
 a {

@@ -2,22 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Icon -->
+
     <link rel="icon" href="assets/icon.png" />
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -26,14 +13,20 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+        
+    <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+      />
 
     <title>Dashboard</title>
   </head>
   <body>
-    <!-- Navbar start -->
+    <!-- Navbar Begin -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -71,18 +64,22 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-person-fill"></i> admin admin
+                <i class="fa-solid fa-user"></i> admin admin
               </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
+              <ul 
+                class="dropdown-menu dropdown-menu-light"
                 aria-labelledby="navbarDarkDropdownMenuLink"
-              >
+              > 
+                </li>
                 <li class="p-1">
-                  <a class="dropdown-item" href="#">Change password</a>
+                  <div class = "px-md-1" >Update</div>
+                  <a class="dropdown-item" href="#">
+                    <i class = "fa-regular fa-pen-to-square"></i> Change Password
+                  </a>
                 </li>
                 <li class="p-1">
                   <a class="dropdown-item" href="#">
-                    <i class="bi bi-box-arrow-in-right"></i> Logout
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
                   </a>
                 </li>
               </ul>
@@ -100,52 +97,52 @@
             <ul class="list-group">
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-speedometer2"></i> Dashboard
+                  <i class="fa-solid fa-gauge-high"></i> Dashboard
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-search"></i> Application Search
+                  <i class="fa-solid fa-magnifying-glass"></i> Application Search
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-people-fill"></i> Students
+                  <i class="fa-solid fa-people-group"></i> Students
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-currency-dollar"></i> Bills
+                  <i class="fa-solid fa-dollar-sign"></i> Bills 
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-tag-fill"></i> OTH Applications
+                  <i class="fa-solid fa-tag"></i> OTH Applications
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-inbox-fill"></i> Complains Box
+                  <i class="fa-solid fa-box"></i> Complains Box
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-magic"></i> Photo Changes
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> Photo Changes
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-envelope"></i> SMS Sender
+                  <i class="fa-solid fa-envelope"></i> SMS Sender
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-check-square-fill"></i> Check Photos
+                  <i class="fa-solid fa-square-check"></i> Check Photos
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-x-square-fill"></i> Rejected Photos
+                  <i class="fa-solid fa-xmark"></i> Rejected Photos
                 </li>
               </a>
               <a href="#">
@@ -157,22 +154,22 @@
           </div>
           <div class="card mt-4">
             <div class="card-header card-title">
-              <span class="text-primary font-weight-bold">Admin</span>
+              <span class="text-primary font-weight-bold"><b>Admin</b></span>
             </div>
             <ul class="list-group">
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-people"></i> Users
+                  <i class="fa-solid fa-people-group"></i> Users
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-gear-fill"></i> App. Settings
+                  <i class="fa-solid fa-gear"></i> App. Settings
                 </li>
               </a>
               <a href="#">
                 <li class="list-group-item">
-                  <i class="bi bi-file-earmark-text-fill"></i> Log Viewer
+                  <i class="fa-solid fa-file-lines"></i> Log Viewer
                 </li>
               </a>
             </ul>
@@ -184,7 +181,7 @@
         <div class="col-sm-12 col-md-9 col-lg-10">
           <div class="card">
             <div class="card-header bg-white fs-5">
-              <i class="bi bi-tag-fill"></i> Bill Information
+              <i class="fa-solid fa-tag"></i> Bill Information
             </div>
             <div class="card-body">
               <!-- Inline search start -->
@@ -221,7 +218,7 @@
                       class="btn btn-primary mr-sm-2 col-12"
                       type="submit"
                     >
-                      <i class="bi bi-search"></i> Search
+                      <i class="fa-solid fa-magnifying-glass"></i> Search
                     </button>
                   </div>
                 </div>
@@ -247,307 +244,307 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                     <tr>
-                      <td>100001</td>
-                      <td>2905627</td>
-                      <td>55</td>
+                      <td>999999</td>
+                      <td>12345</td>
+                      <td>10</td>
                       <td>A,B,C</td>
                       <td></td>
-                      <td>0123456789</td>
+                      <td>123456789101</td>
                       <td>E</td>
                       <td>1</td>
-                      <td>2022-05-25 18:04:57</td>
+                      <td>2023-02-17 10:10:10</td>
                       <td>
                         <a href="">
-                          <i class="bi bi-person-fill"></i> Details
+                          <i class="fa-solid fa-user"></i> Details
                         </a>
                       </td>
                       <td>
-                        <a href=""> <i class="bi bi-download"></i> DL </a>
+                        <a href=""> <i class="fa-solid fa-download"></i> DL </a>
                       </td>
                     </tr>
                   </tbody>
@@ -569,6 +566,9 @@
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">.......</a></li>
+                  <li class="page-item"><a class="page-link" href="#">13141</a></li>
+                  <li class="page-item"><a class="page-link" href="#">134142</a></li>
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
